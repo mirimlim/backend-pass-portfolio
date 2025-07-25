@@ -1,4 +1,4 @@
-version: '3.8'
+version: '28.3.0'
 
 services:
   db:
@@ -31,7 +31,7 @@ services:
     build: .
     container_name: spring-app
     ports:
-      - "8080:8080"
+      - "8500:8500"
     environment:
       SPRING_DATASOURCE_URL: jdbc:mysql://db:3306/portfolio?allowPublicKeyRetrieval=true&useSSL=false&rewriteBatchedStatements=true
       JAVA_OPTS: "-Xms256m -Xmx512m"  # JVM 힙 메모리 제한
